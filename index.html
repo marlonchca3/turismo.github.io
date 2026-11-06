@@ -1,858 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tour Advisor - Explore the World</title>
-
-  <!-- 
-    - favicon
-  -->
+  <meta name="description" content="Descubre Cusco, el Valle Sagrado y Machu Picchu con paquetes de viaje de 4 a 21 días. Reserva tu próxima aventura en Perú.">
+  <meta name="theme-color" content="#174c3c">
+  <title>machupicchuperutours | Viajes inolvidables por Perú</title>
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body id="top">
-
-  <!-- 
-    - #HEADER
-  -->
-
   <header class="header" data-header>
     <div class="container">
-
-      <a href="#">
-        <h1 class="logo">Tour Advisor</h1>
+      <a class="brand" href="#top" aria-label="machupicchuperutours, inicio">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span class="logo">machupicchu<span>perutours</span></span>
       </a>
-
-      <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+      <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Abrir menú" aria-expanded="false">
         <ion-icon name="menu-outline" class="open"></ion-icon>
         <ion-icon name="close-outline" class="close"></ion-icon>
       </button>
-
-      <nav class="navbar">
-
+      <nav class="navbar" aria-label="Navegación principal">
         <ul class="navbar-list">
-
-          <li>
-            <a href="#" class="navbar-link">Home</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">About Us</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Tours</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Destinations</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Blog</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link">Contact Us</a>
-          </li>
-
+          <li><a href="#inicio" class="navbar-link">Inicio</a></li>
+          <li><a href="#paquetes" class="navbar-link">Paquetes</a></li>
+          <li><a href="#nosotros" class="navbar-link">Nosotros</a></li>
+          <li><a href="#reservar" class="navbar-link">Reservar</a></li>
         </ul>
-
-        <a href="#" class="btn btn-secondary">Booking Now</a>
-
+        <a href="#reservar" class="btn btn-secondary header-cta">Reserva tu viaje</a>
       </nav>
-
     </div>
   </header>
 
-
-
-
-
   <main>
-    <article>
+    <section class="hero peru-hero" id="inicio">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="section-subtitle">Tu aventura empieza aquí</p>
+          <h1 class="hero-title">El Perú te espera. <span>Vívelo de verdad.</span></h1>
+          <p class="hero-text">Explora los Andes, camina por el Valle Sagrado y descubre la magia de Machu Picchu con guías locales que aman compartir su tierra.</p>
+          <div class="btn-group">
+            <a href="#paquetes" class="btn btn-primary">Explorar paquetes <ion-icon name="arrow-down-outline" aria-hidden="true"></ion-icon></a>
+            <a href="#nosotros" class="btn btn-outline">Conócenos</a>
+          </div>
+          <div class="hero-highlights" aria-label="Ventajas de viajar con nosotros">
+            <span><ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon> Guías locales</span>
+            <span><ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon> Grupos pequeños</span>
+            <span><ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon> Viajes a tu ritmo</span>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Vista panorámica de Machu Picchu entre las montañas de los Andes" fetchpriority="high">
+          <div class="photo-caption"><span class="caption-icon"><ion-icon name="location" aria-hidden="true"></ion-icon></span><span><strong>Machu Picchu</strong><small>Una maravilla que se vive</small></span></div>
+          <span class="hero-stamp">PERÚ<br>TE SORPRENDE</span>
+        </div>
+      </div>
+      <div class="hero-bottom container">
+        <span>13° 09' 47.8" S &nbsp;·&nbsp; 72° 32' 44.6" O</span>
+        <span>CUZCO, PERÚ</span>
+      </div>
+    </section>
 
-      <!-- 
-        - #HERO
-      -->
+    <section class="section destination peru-destination" aria-labelledby="destinos-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-subtitle">Paisajes que cuentan historias</p>
+          <h2 class="h2 section-title" id="destinos-title">Un viaje, muchos mundos</h2>
+          <p>De las calles de Cusco a los caminos de montaña, cada parada tiene algo que contar.</p>
+        </div>
+        <div class="destination-list">
+          <a class="destination-card destination-card-large" href="#paquetes">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Montañas y arquitectura tradicional en los Andes peruanos" loading="lazy">
+            <span class="destination-overlay"><small>Historia viva</small><strong>Cusco</strong></span>
+          </a>
+          <a class="destination-card" href="#paquetes">
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Paisaje natural del Perú" loading="lazy">
+            <span class="destination-overlay"><small>Tradición andina</small><strong>Valle Sagrado</strong></span>
+          </a>
+          <a class="destination-card" href="#paquetes">
+            <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Machu Picchu, ciudadela inca en las montañas" loading="lazy">
+            <span class="destination-overlay"><small>La ciudadela inca</small><strong>Machu Picchu</strong></span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-      <section class="section hero"
-        style="background-image: url('./assets/images/hero-bg-bottom.png') url('./assets/images/hero-bg-top.png')">
-        <div class="container">
+    <section class="section popular peru-packages" id="paquetes">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-subtitle">Elige tu próxima aventura</p>
+          <h2 class="h2 section-title">Paquetes hechos para ti</h2>
+          <p>Desde una escapada de 4 días hasta una gran expedición de 21 días. Todos incluyen acompañamiento local.</p>
+        </div>
+        <ul class="popular-list package-list">
+          <li>
+            <article class="popular-card package-card">
+              <figure class="card-banner"><img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&amp;fit=crop&amp;w=850&amp;q=80" alt="Machu Picchu rodeado de montañas" loading="lazy" class="img-cover"><span class="card-badge"><ion-icon name="time-outline" aria-hidden="true"></ion-icon><time datetime="P4D">4 días</time></span></figure>
+              <div class="card-content"><div class="package-kicker">La primera aventura</div><h3 class="card-title">Cusco y Machu Picchu esencial</h3><p class="package-description">Cusco, Valle Sagrado y la ciudadela inca en una escapada inolvidable.</p><div class="package-meta"><span><ion-icon name="location-outline" aria-hidden="true"></ion-icon> Cusco · Machu Picchu</span><strong>Desde US$ 590</strong></div><button class="btn btn-primary package-book" type="button" data-package="4">Reservar paquete</button></div>
+            </article>
+          </li>
+          <li>
+            <article class="popular-card package-card">
+              <figure class="card-banner"><img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&amp;fit=crop&amp;w=850&amp;q=80" alt="Arquitectura de piedra en los Andes" loading="lazy" class="img-cover"><span class="card-badge"><ion-icon name="time-outline" aria-hidden="true"></ion-icon><time datetime="P7D">7 días</time></span></figure>
+              <div class="card-content"><div class="package-kicker">El favorito de los viajeros</div><h3 class="card-title">Cusco y Valle Sagrado</h3><p class="package-description">Una semana para conocer mercados, ruinas incas y Machu Picchu sin apuros.</p><div class="package-meta"><span><ion-icon name="location-outline" aria-hidden="true"></ion-icon> Cusco · Valle Sagrado</span><strong>Desde US$ 890</strong></div><button class="btn btn-primary package-book" type="button" data-package="7">Reservar paquete</button></div>
+            </article>
+          </li>
+          <li>
+            <article class="popular-card package-card">
+              <figure class="card-banner"><img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?auto=format&amp;fit=crop&amp;w=850&amp;q=80" alt="Caminos y montañas de la región de Machu Picchu" loading="lazy" class="img-cover"><span class="card-badge"><ion-icon name="time-outline" aria-hidden="true"></ion-icon><time datetime="P10D">10 días</time></span></figure>
+              <div class="card-content"><div class="package-kicker">Cultura y aventura</div><h3 class="card-title">Andes, historia y aventura</h3><p class="package-description">Combina la herencia inca, caminatas escénicas y sabores de la cocina peruana.</p><div class="package-meta"><span><ion-icon name="location-outline" aria-hidden="true"></ion-icon> Cusco · Andes</span><strong>Desde US$ 1,290</strong></div><button class="btn btn-primary package-book" type="button" data-package="10">Reservar paquete</button></div>
+            </article>
+          </li>
+          <li>
+            <article class="popular-card package-card">
+              <figure class="card-banner"><img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&amp;fit=crop&amp;w=850&amp;q=80" alt="Paisaje montañoso y naturaleza peruana" loading="lazy" class="img-cover"><span class="card-badge"><ion-icon name="time-outline" aria-hidden="true"></ion-icon><time datetime="P14D">14 días</time></span></figure>
+              <div class="card-content"><div class="package-kicker">Una inmersión completa</div><h3 class="card-title">Perú clásico</h3><p class="package-description">Un recorrido más profundo por Cusco, el Valle Sagrado y los paisajes andinos.</p><div class="package-meta"><span><ion-icon name="location-outline" aria-hidden="true"></ion-icon> Andes peruanos</span><strong>Desde US$ 1,790</strong></div><button class="btn btn-primary package-book" type="button" data-package="14">Reservar paquete</button></div>
+            </article>
+          </li>
+          <li>
+            <article class="popular-card package-card">
+              <figure class="card-banner"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&amp;fit=crop&amp;w=850&amp;q=80" alt="Cordillera de los Andes al amanecer" loading="lazy" class="img-cover"><span class="card-badge"><ion-icon name="time-outline" aria-hidden="true"></ion-icon><time datetime="P21D">21 días</time></span></figure>
+              <div class="card-content"><div class="package-kicker">La gran expedición</div><h3 class="card-title">Perú de punta a punta</h3><p class="package-description">Tres semanas para explorar con calma, conectar con la cultura y salir de ruta.</p><div class="package-meta"><span><ion-icon name="location-outline" aria-hidden="true"></ion-icon> Perú · Ruta completa</span><strong>Desde US$ 2,690</strong></div><button class="btn btn-primary package-book" type="button" data-package="21">Reservar paquete</button></div>
+            </article>
+          </li>
+        </ul>
+        <p class="price-note">Precios referenciales por persona en USD; se muestran solo para esta demostración y requieren confirmación antes de cualquier compra.</p>
+      </div>
+    </section>
 
-          <img src="./assets/images/shape-1.png" width="61" height="61" alt="Vector Shape" class="shape shape-1">
+    <section class="section about peru-about" id="nosotros">
+      <div class="container">
+        <div class="about-content">
+          <p class="section-subtitle">Más que un tour</p>
+          <h2 class="h2 section-title">Perú se descubre mejor con gente de aquí.</h2>
+          <p class="about-text">En machupicchuperutours creemos que un gran viaje se construye con tiempo, curiosidad y una conexión auténtica con cada lugar.</p>
+          <ul class="about-list">
+            <li class="about-item"><span class="about-item-icon"><ion-icon name="compass-outline" aria-hidden="true"></ion-icon></span><div><h3 class="h3 about-item-title">Experiencias locales</h3><p class="about-item-text">Rutas acompañadas por personas que conocen y viven el destino.</p></div></li>
+            <li class="about-item"><span class="about-item-icon"><ion-icon name="heart-outline" aria-hidden="true"></ion-icon></span><div><h3 class="h3 about-item-title">A tu propio ritmo</h3><p class="about-item-text">Paquetes de 4 a 21 días para que elijas cómo quieres viajar.</p></div></li>
+            <li class="about-item"><span class="about-item-icon"><ion-icon name="leaf-outline" aria-hidden="true"></ion-icon></span><div><h3 class="h3 about-item-title">Viajar con respeto</h3><p class="about-item-text">Promovemos encuentros responsables con la cultura y la naturaleza.</p></div></li>
+          </ul>
+          <a href="#reservar" class="btn btn-primary">Empezar a planear</a>
+        </div>
+        <div class="about-photo"><img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Terrazas incas de Machu Picchu en los Andes peruanos" loading="lazy"><span>Hecho con cariño en Perú <ion-icon name="heart" aria-hidden="true"></ion-icon></span></div>
+      </div>
+    </section>
 
-          <img src="./assets/images/shape-2.png" width="56" height="74" alt="Vector Shape" class="shape shape-2">
-
-          <img src="./assets/images/shape-3.png" width="57" height="72" alt="Vector Shape" class="shape shape-3">
-
-          <div class="hero-content">
-
-            <p class="section-subtitle">Explore Your Travel</p>
-
-            <h2 class="hero-title">Trusted Travel Agency</h2>
-
-            <p class="hero-text">
-              I travel not to go anywhere, but to go. I travel for travel's sake the great affair is to move.
-            </p>
-
-            <div class="btn-group">
-              <a href="#" class="btn btn-primary">Contact Us</a>
-
-              <a href="#" class="btn btn-outline">Learn More</a>
+    <section class="section booking-section" id="reservar">
+      <div class="container booking-layout">
+        <div class="booking-intro">
+          <p class="section-subtitle">Tu viaje está más cerca</p>
+          <h2 class="h2 section-title">Reserva tu aventura</h2>
+          <p>Cuéntanos qué viaje te gustaría hacer. Revisa los detalles y continúa al pago de demostración.</p>
+          <div class="demo-notice"><ion-icon name="information-circle-outline" aria-hidden="true"></ion-icon><p><strong>Modo demostración:</strong> este sitio no cobra, no procesa tarjetas y no envía reservas a una agencia. Los datos se usan solo en esta página.</p></div>
+        </div>
+        <div class="booking-card">
+          <form id="booking-form">
+            <div class="form-heading"><span class="form-step">01</span><div><h3>Detalles del viaje</h3><p>Elige tu paquete y fecha</p></div></div>
+            <label for="package-select">Paquete</label>
+            <select id="package-select" name="package" required>
+              <option value="">Selecciona un paquete</option>
+              <option value="4">Cusco y Machu Picchu esencial · 4 días</option>
+              <option value="7">Cusco y Valle Sagrado · 7 días</option>
+              <option value="10">Andes, historia y aventura · 10 días</option>
+              <option value="14">Perú clásico · 14 días</option>
+              <option value="21">Perú de punta a punta · 21 días</option>
+            </select>
+            <div class="form-row">
+              <div><label for="travel-date">Fecha de inicio</label><input id="travel-date" name="date" type="date" required></div>
+              <div><label for="travelers">Viajeros</label><input id="travelers" name="travelers" type="number" min="1" max="10" value="2" required></div>
             </div>
-
-          </div>
-
-          <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.png" width="686" height="812" loading="lazy" alt="hero banner"
-              class="w-100">
-          </figure>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #DESTINATION
-      -->
-
-      <section class="section destination">
-        <div class="container">
-
-          <p class="section-subtitle">Destinations</p>
-
-          <h2 class="h2 section-title">Choose Your Place</h2>
-
-          <ul class="destination-list">
-
-            <li class="w-50">
-              <a href="#" class="destination-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/destination-1.jpg" width="1140" height="1100" loading="lazy"
-                    alt="Malé, Maldives" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <p class="card-subtitle">Malé</p>
-
-                  <h3 class="h3 card-title">Maldives</h3>
-                </div>
-
-              </a>
-            </li>
-
-            <li class="w-50">
-              <a href="#" class="destination-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/destination-2.jpg" width="1140" height="1100" loading="lazy"
-                    alt="Bangkok, Thailand" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <p class="card-subtitle">Bangkok</p>
-
-                  <h3 class="h3 card-title">Thailand</h3>
-                </div>
-
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="destination-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/destination-3.jpg" width="1110" height="480" loading="lazy"
-                    alt="Kuala Lumpur, Malaysia" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <p class="card-subtitle">Kuala Lumpur</p>
-
-                  <h3 class="h3 card-title">Malaysia</h3>
-                </div>
-
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="destination-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/destination-4.jpg" width="1110" height="480" loading="lazy"
-                    alt="Kathmandu, Nepal" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <p class="card-subtitle">Kathmandu</p>
-
-                  <h3 class="h3 card-title">Nepal</h3>
-                </div>
-
-              </a>
-            </li>
-
-            <li>
-              <a href="#" class="destination-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/destination-5.jpg" width="1110" height="480" loading="lazy"
-                    alt="Jakarta, Indonesia" class="img-cover">
-                </figure>
-
-                <div class="card-content">
-                  <p class="card-subtitle">Jakarta</p>
-
-                  <h3 class="h3 card-title">Indonesia</h3>
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #POPULAR
-      -->
-
-      <section class="section popular">
-        <div class="container">
-
-          <p class="section-subtitle">Featured Tours</p>
-
-          <h2 class="h2 section-title">Most Popular Tours</h2>
-
-          <ul class="popular-list">
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/popular-1.jpg" width="740" height="518" loading="lazy"
-                      alt="Kuala Lumpur, Malaysia" class="img-cover">
-                  </a>
-
-                  <span class="card-badge">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="P12D">12 Days</time>
-                  </span>
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-                    <div class="card-price">From $50.00</div>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star-outline"></ion-icon>
-
-                      <data value="2">(2)</data>
-                    </div>
-                  </div>
-
-                  <h3 class="card-title">
-                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
-                  </h3>
-
-                  <address class="card-location">Kuala Lumpur, Malaysia</address>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/popular-2.jpg" width="740" height="518" loading="lazy"
-                      alt="Kuala Lumpur, Malaysia" class="img-cover">
-                  </a>
-
-                  <span class="card-badge">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="P12D">12 Days</time>
-                  </span>
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-                    <div class="card-price">From $50.00</div>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star-outline"></ion-icon>
-
-                      <data value="2">(2)</data>
-                    </div>
-                  </div>
-
-                  <h3 class="card-title">
-                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
-                  </h3>
-
-                  <address class="card-location">Kuala Lumpur, Malaysia</address>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-banner">
-                  <a href="#">
-                    <img src="./assets/images/popular-3.jpg" width="740" height="518" loading="lazy"
-                      alt="Kuala Lumpur, Malaysia" class="img-cover">
-                  </a>
-
-                  <span class="card-badge">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="P12D">12 Days</time>
-                  </span>
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-                    <div class="card-price">From $50.00</div>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star-outline"></ion-icon>
-
-                      <data value="2">(2)</data>
-                    </div>
-                  </div>
-
-                  <h3 class="card-title">
-                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
-                  </h3>
-
-                  <address class="card-location">Kuala Lumpur, Malaysia</address>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about">
-        <div class="container">
-
-          <div class="about-content">
-
-            <p class="section-subtitle">About Us</p>
-
-            <h2 class="h2 section-title">Explore all tour of the world with us.</h2>
-
-            <p class="about-text">
-              Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
-              randomised words
-              which don't look even slightly believable.
-            </p>
-
-            <ul class="about-list">
-
-              <li class="about-item">
-
-                <div class="about-item-icon">
-                  <ion-icon name="compass"></ion-icon>
-                </div>
-
-                <div class="about-item-content">
-                  <h3 class="h3 about-item-title">Tour guide</h3>
-
-                  <p class="about-item-text">
-                    Lorem Ipsum available, but the majority have suffered alteration in some.
-                  </p>
-                </div>
-
-              </li>
-
-              <li class="about-item">
-
-                <div class="about-item-icon">
-                  <ion-icon name="briefcase"></ion-icon>
-                </div>
-
-                <div class="about-item-content">
-                  <h3 class="h3 about-item-title">Friendly price</h3>
-
-                  <p class="about-item-text">
-                    Lorem Ipsum available, but the majority have suffered alteration in some.
-                  </p>
-                </div>
-
-              </li>
-
-              <li class="about-item">
-
-                <div class="about-item-icon">
-                  <ion-icon name="umbrella"></ion-icon>
-                </div>
-
-                <div class="about-item-content">
-                  <h3 class="h3 about-item-title">Reliable tour</h3>
-
-                  <p class="about-item-text">
-                    Lorem Ipsum available, but the majority have suffered alteration in some.
-                  </p>
-                </div>
-
-              </li>
-
-            </ul>
-
-            <a href="#" class="btn btn-primary">Booking Now</a>
-
-          </div>
-
-          <figure class="about-banner">
-            <img src="./assets/images/about-banner.png" width="756" height="842" loading="lazy" alt="" class="w-100">
-          </figure>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #BLOG
-      -->
-
-      <section class="section blog">
-        <div class="container">
-
-          <p class="section-subtitle">From The Blog Post</p>
-
-          <h2 class="h2 section-title">Latest News & Articles</h2>
-
-          <ul class="blog-list">
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/popular-1.jpg" width="740" height="518" loading="lazy"
-                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
-                  </a>
-
-                  <span class="card-badge">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="12-04">04 Dec</time>
-                  </span>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-
-                    <div class="author-wrapper">
-                      <figure class="author-avatar">
-                        <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Asraful Sharker">
-                      </figure>
-
-                      <div>
-                        <a href="#" class="author-name">Asraful Sharker</a>
-
-                        <p class="author-title">Admin</p>
-                      </div>
-                    </div>
-
-                    <time class="publish-time" datetime="10:30">10:30 AM</time>
-
-                  </div>
-
-                  <h3 class="card-title">
-                    <a href="#">
-                      A good traveler has no fixed plans and is not intent on arriving.
-                    </a>
-                  </h3>
-
-                  <a href="#" class="btn-link">
-                    <span>Read More</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/blog-2.jpg" width="740" height="518" loading="lazy"
-                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
-                  </a>
-
-                  <span class="card-badge">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="12-04">04 Dec</time>
-                  </span>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-
-                    <div class="author-wrapper">
-                      <figure class="author-avatar">
-                        <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Asraful Sharker">
-                      </figure>
-
-                      <div>
-                        <a href="#" class="author-name">Asraful Sharker</a>
-
-                        <p class="author-title">Admin</p>
-                      </div>
-                    </div>
-
-                    <time class="publish-time" datetime="10:30">10:30 AM</time>
-
-                  </div>
-
-                  <h3 class="card-title">
-                    <a href="#">
-                      A good traveler has no fixed plans and is not intent on arriving.
-                    </a>
-                  </h3>
-
-                  <a href="#" class="btn-link">
-                    <span>Read More</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="blog-card">
-
-                <figure class="card-banner">
-
-                  <a href="#">
-                    <img src="./assets/images/blog-3.jpg" width="740" height="518" loading="lazy"
-                      alt="A good traveler has no fixed plans and is not intent on arriving." class="img-cover">
-                  </a>
-
-                  <span class="card-badge">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="12-04">04 Dec</time>
-                  </span>
-
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-wrapper">
-
-                    <div class="author-wrapper">
-                      <figure class="author-avatar">
-                        <img src="./assets/images/author-avatar.png" width="30" height="30" alt="Asraful Sharker">
-                      </figure>
-
-                      <div>
-                        <a href="#" class="author-name">Asraful Sharker</a>
-
-                        <p class="author-title">Admin</p>
-                      </div>
-                    </div>
-
-                    <time class="publish-time" datetime="10:30">10:30 AM</time>
-
-                  </div>
-
-                  <h3 class="card-title">
-                    <a href="#">
-                      A good traveler has no fixed plans and is not intent on arriving.
-                    </a>
-                  </h3>
-
-                  <a href="#" class="btn-link">
-                    <span>Read More</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-    </article>
-  </main>
-
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
-    <div class="container">
-
-      <div class="footer-top">
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Top destination</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Indonesia, Jakarta</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Maldives, Malé</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Australia, Canberra</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Thailand, Bangkok</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Morocco, Rabat</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Categories</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Travel</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Lifestyle</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Fashion</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Education</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Food & Drink</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Quick links</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">About</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Contact</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Tours</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Booking</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Terms & Conditions</a>
-          </li>
-
-        </ul>
-
-        <div class="footer-list">
-
-          <p class="footer-list-title">Get a newsletter</p>
-
-          <p class="newsletter-text">
-            For the latest deals and tips, travel no further than your inbox
-          </p>
-
-          <form action="" class="newsletter-form">
-            <input type="email" name="email" required placeholder="Email address" class="newsletter-input">
-
-            <button type="submit" class="btn btn-primary">Subscribe</button>
+            <div class="form-row">
+              <div><label for="guest-name">Nombre completo</label><input id="guest-name" name="name" type="text" autocomplete="name" placeholder="Tu nombre" required></div>
+              <div><label for="guest-email">Correo electrónico</label><input id="guest-email" name="email" type="email" autocomplete="email" placeholder="tu@correo.com" required></div>
+            </div>
+            <div class="booking-total"><span><span id="summary-package">Selecciona un paquete</span><small id="summary-travelers">2 viajeros</small></span><strong id="summary-total">US$ 0</strong></div>
+            <button type="submit" class="btn btn-primary booking-submit">Continuar al pago <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon></button>
           </form>
 
+          <form id="payment-form" hidden>
+            <div class="form-heading"><span class="form-step">02</span><div><h3>Pago de demostración</h3><p>Selecciona un método de prueba</p></div></div>
+            <div class="order-summary" id="order-summary"></div>
+            <fieldset class="payment-options">
+              <legend>Método de pago (simulado)</legend>
+              <label class="payment-option"><input type="radio" name="payment-method" value="Tarjeta de crédito o débito" checked><span><ion-icon name="card-outline" aria-hidden="true"></ion-icon> Tarjeta de crédito o débito <small>Visa · Mastercard</small></span></label>
+              <label class="payment-option"><input type="radio" name="payment-method" value="Mercado Pago (demostración)"><span><ion-icon name="wallet-outline" aria-hidden="true"></ion-icon> Mercado Pago <small>Solo vista previa</small></span></label>
+            </fieldset>
+            <p class="payment-disclaimer">No ingreses datos de tarjeta. Al continuar solo verás una confirmación ficticia; no se realizará ningún cargo.</p>
+            <button type="submit" class="btn btn-primary booking-submit">Simular pago y reservar <ion-icon name="lock-closed-outline" aria-hidden="true"></ion-icon></button>
+            <button type="button" class="text-button" id="back-to-booking">Volver a los datos del viaje</button>
+          </form>
+
+          <div id="booking-success" class="booking-success" role="status" tabindex="-1" hidden>
+            <span class="success-icon"><ion-icon name="checkmark-outline" aria-hidden="true"></ion-icon></span>
+            <p class="success-eyebrow">Demostración completada</p>
+            <h3>¡Gracias por planear tu viaje!</h3>
+            <p id="success-message"></p>
+            <div class="demo-notice"><ion-icon name="information-circle-outline" aria-hidden="true"></ion-icon><p>Esta confirmación no es una reserva real y no se procesó ningún pago.</p></div>
+            <button type="button" class="btn btn-primary" id="new-booking">Crear otra reserva de prueba</button>
+          </div>
         </div>
-
       </div>
+    </section>
+  </main>
 
-      <div class="footer-bottom">
-
-        <a href="#" class="logo">Tour Advisor</a>
-
-        <p class="copyright">
-          &copy; 2023 <a href="https://github.com/asrafulsharker" class="copyright-link">asrafulsharker</a>. All Rights Reserved
-        </p>
-
-        <ul class="social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-google"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
+  <footer class="footer peru-footer">
+    <div class="container footer-bottom">
+      <a href="#top" class="brand" aria-label="machupicchuperutours, inicio"><span class="brand-mark" aria-hidden="true">M</span><span class="logo">machupicchu<span>perutours</span></span></a>
+      <p class="copyright">© <span id="current-year"></span> machupicchuperutours. Viajes con corazón peruano.</p>
+      <a class="footer-contact" href="#reservar">Planea tu viaje <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon></a>
     </div>
   </footer>
 
-
-
-
-
-  <!-- 
-    - #GO TO TOP
-  -->
-
-  <a href="#top" class="go-top" data-go-top aria-label="Go To Top">
-    <ion-icon name="chevron-up-outline"></ion-icon>
+  <a class="whatsapp-float" href="https://wa.me/51984625171?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20paquetes%20a%20Per%C3%BA." target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp, se abre en una pestaña nueva">
+    <ion-icon name="logo-whatsapp" aria-hidden="true"></ion-icon>
+    <span>¿Planeamos tu viaje?</span>
   </a>
-
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
+  <a href="#top" class="go-top" data-go-top aria-label="Volver arriba"><ion-icon name="chevron-up-outline"></ion-icon></a>
   <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>

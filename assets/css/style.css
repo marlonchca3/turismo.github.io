@@ -21,7 +21,7 @@
    */
 
   --battleship-gray: hsl(0, 0%, 53%);
-  --viridian-green: hsl(278, 100%, 29%);
+  --viridian-green: hsl(158, 53%, 25%);
   --silver-chalice: hsl(0, 0%, 69%);
   --mikado-yellow: hsl(47, 98%, 50%);
   --granite-gray: hsl(0, 0%, 40%);
@@ -1030,4 +1030,275 @@ body {
 
   .about .container { grid-template-columns: 0.7fr 1fr; }
 
+}
+
+/*-----------------------------------*\
+  #MACHUPICCHUPERUTOURS
+\*-----------------------------------*/
+
+:root {
+  --peru-forest: #174c3c;
+  --peru-green: #236a50;
+  --peru-sand: #f5f1e7;
+  --peru-terracotta: #c5794b;
+  --peru-ink: #1d3129;
+}
+
+.header { overflow: visible; position: relative; z-index: 5; }
+.header .container { gap: 12px; }
+.brand { display: flex; align-items: center; gap: 9px; }
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid hsla(0, 0%, 100%, 0.65);
+  border-radius: 50%;
+  color: #fff;
+  font-family: var(--ff-abril-fatface);
+  font-size: 2rem;
+}
+.brand .logo { font-size: 1.65rem; line-height: 1.1; }
+.brand .logo span { display: inline; color: #f2c879; }
+.nav-toggle-btn { margin-left: auto; }
+.navbar { background: var(--peru-forest); }
+.navbar-list { display: grid; }
+.header-cta { margin-top: 6px; }
+
+.peru-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 0;
+  padding-block: 56px 28px;
+  background:
+    radial-gradient(ellipse at 75% 15%, hsla(43, 74%, 76%, 0.3), transparent 35%),
+    linear-gradient(135deg, #f8f6ef 0%, #eff2e9 100%);
+}
+.peru-hero .hero-layout {
+  display: grid;
+  align-items: center;
+  gap: 38px;
+}
+.hero-content { margin: 0; position: relative; z-index: 1; }
+.peru-hero .section-subtitle,
+.section-heading .section-subtitle,
+.booking-intro .section-subtitle {
+  color: var(--peru-terracotta);
+  font-size: 2.8rem;
+}
+.peru-hero .hero-title {
+  max-width: 12ch;
+  margin-bottom: 20px;
+  color: var(--peru-ink);
+  font-size: clamp(4rem, 10vw, 6.6rem);
+  line-height: 1.08;
+}
+.hero-title span { color: var(--peru-green); }
+.peru-hero .hero-text { max-width: 50ch; font-size: 1.7rem; }
+.peru-hero .btn-primary { display: inline-flex; align-items: center; gap: 10px; }
+.peru-hero .btn-primary ion-icon { font-size: 1.9rem; }
+.hero-highlights { display: flex; flex-wrap: wrap; gap: 13px 20px; margin-top: 28px; color: #485c51; font-size: 1.3rem; }
+.hero-highlights span { display: flex; align-items: center; gap: 5px; }
+.hero-highlights ion-icon { color: var(--peru-green); font-size: 1.8rem; }
+.hero-photo { position: relative; min-height: 330px; }
+.hero-photo > img { width: 100%; height: 100%; min-height: 330px; object-fit: cover; border-radius: 48% 48% 12px 12px; }
+.photo-caption {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 15px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 12px 30px #162c251c;
+}
+.caption-icon { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: #e8f0e9; color: var(--peru-green); font-size: 2rem; }
+.photo-caption strong, .photo-caption small { display: block; }
+.photo-caption strong { color: var(--peru-ink); font-size: 1.4rem; }
+.photo-caption small { color: var(--battleship-gray); font-size: 1.1rem; }
+.hero-stamp {
+  position: absolute;
+  top: 20px;
+  right: 12px;
+  display: grid;
+  place-items: center;
+  width: 88px;
+  height: 88px;
+  border: 1px dashed #fff;
+  border-radius: 50%;
+  background: var(--peru-terracotta);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+  transform: rotate(9deg);
+}
+.hero-bottom { display: flex; justify-content: space-between; padding-top: 35px; color: #67756b; font-size: 1.05rem; letter-spacing: 0.11em; }
+
+.peru-destination { padding-block: 72px; }
+.section-heading { max-width: 650px; margin: 0 auto 38px; text-align: center; }
+.section-heading .section-subtitle { margin-bottom: 10px; }
+.section-heading .section-title { margin-bottom: 12px; }
+.section-heading > p:last-child { color: var(--black-coral); line-height: 1.7; }
+.destination-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+.destination-card { min-height: 230px; }
+.destination-card img { width: 100%; height: 100%; min-height: 230px; object-fit: cover; }
+.destination-card::after { background: linear-gradient(180deg, transparent 30%, #101f19c9 100%); }
+.destination-overlay { position: absolute; z-index: 1; bottom: 22px; left: 22px; color: #fff; }
+.destination-overlay small, .destination-overlay strong { display: block; }
+.destination-overlay small { color: #f1cf8f; font-size: 1.3rem; }
+.destination-overlay strong { font-family: var(--ff-abril-fatface); font-size: 2.8rem; }
+
+.peru-packages { padding-block: 72px; background: var(--peru-sand); }
+.package-list { grid-template-columns: 1fr; align-items: stretch; }
+.package-list > li { display: flex; }
+.package-card { display: flex; flex: 1; flex-direction: column; background: #fff; }
+.package-card .card-banner { height: 220px; overflow: hidden; }
+.package-card .card-banner img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition-2); }
+.package-card:hover .card-banner img { transform: scale(1.04); }
+.package-card .card-content { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 22px; }
+.package-kicker { color: var(--peru-terracotta); font-size: 1.2rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.package-card .card-title { min-height: 52px; margin: 8px 0; color: var(--peru-ink); font-family: var(--ff-abril-fatface); font-size: 2.15rem; line-height: 1.2; }
+.package-description { min-height: 66px; color: var(--black-coral); font-size: 1.4rem; line-height: 1.6; }
+.package-meta { display: flex; width: 100%; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; margin-block: 18px; padding-top: 14px; border-top: 1px solid #e8e8e3; }
+.package-meta span { display: flex; align-items: center; gap: 5px; color: var(--battleship-gray); font-size: 1.2rem; }
+.package-meta span ion-icon { color: var(--peru-green); font-size: 1.6rem; }
+.package-meta strong { color: var(--peru-green); font-size: 1.35rem; }
+.package-book { width: 100%; margin-top: auto; text-align: center; }
+.price-note { margin-top: 22px; color: var(--battleship-gray); font-size: 1.2rem; text-align: center; }
+
+.peru-about { padding-block: 72px; }
+.peru-about .section-title { max-width: 14ch; color: var(--peru-ink); }
+.peru-about .about-item-icon { flex: 0 0 auto; display: grid; place-items: center; width: 50px; height: 50px; padding: 0; background: #edf2eb; color: var(--peru-green); }
+.about-photo { position: relative; margin-top: 10px; }
+.about-photo img { width: 100%; max-height: 460px; object-fit: cover; border-radius: 12px 12px 90px 12px; }
+.about-photo > span { position: absolute; right: 12px; bottom: 12px; display: flex; align-items: center; gap: 6px; padding: 10px 13px; border-radius: 5px; background: #fff; color: var(--peru-forest); font-size: 1.3rem; font-weight: 600; }
+.about-photo ion-icon { color: var(--peru-terracotta); }
+
+.booking-section { padding-block: 72px; background: #173d31; }
+.booking-layout { display: grid; gap: 35px; align-items: start; }
+.booking-intro { color: #fff; }
+.booking-intro .section-title { margin-block: 8px 15px; color: #fff; }
+.booking-intro > p:not(.section-subtitle) { max-width: 42ch; color: #d3ddd6; line-height: 1.7; }
+.demo-notice { display: flex; align-items: flex-start; gap: 10px; margin-top: 25px; padding: 14px; border: 1px solid #eacb8b55; border-radius: 7px; background: #ffffff0c; color: #f7e9c9; }
+.demo-notice > ion-icon { flex: 0 0 auto; margin-top: 2px; color: #f0c77c; font-size: 2rem; }
+.demo-notice p { font-size: 1.25rem; line-height: 1.6; }
+.booking-card { padding: 22px; border-radius: 12px; background: #fff; box-shadow: 0 20px 60px #10271e36; }
+.form-heading { display: flex; align-items: center; gap: 12px; margin-bottom: 22px; }
+.form-step { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: #eaf1ea; color: var(--peru-green); font-size: 1.3rem; font-weight: 700; }
+.form-heading h3 { color: var(--peru-ink); font-size: 2rem; }
+.form-heading p { color: var(--battleship-gray); font-size: 1.25rem; }
+.booking-card label, .payment-options legend { display: block; margin-bottom: 7px; color: #31483c; font-size: 1.3rem; font-weight: 600; }
+.booking-card input:not([type="radio"]), .booking-card select { width: 100%; min-height: 45px; margin-bottom: 15px; padding: 10px 12px; border: 1px solid #dce3dd; border-radius: 5px; background: #fff; color: var(--peru-ink); font: inherit; font-size: 1.35rem; }
+.booking-card input:focus, .booking-card select:focus { outline: 2px solid #84aa91; outline-offset: 1px; }
+.form-row { display: grid; grid-template-columns: 1fr; gap: 0 12px; }
+.booking-total { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-block: 8px 18px; padding: 15px 0; border-top: 1px solid #e5e9e5; border-bottom: 1px solid #e5e9e5; color: var(--peru-ink); font-size: 1.3rem; }
+.booking-total small { display: block; margin-top: 4px; color: var(--battleship-gray); font-size: 1.15rem; }
+.booking-total strong { color: var(--peru-green); font-size: 2rem; white-space: nowrap; }
+.booking-submit { display: flex; width: 100%; justify-content: center; align-items: center; gap: 8px; min-height: 48px; }
+.booking-submit ion-icon { font-size: 1.8rem; }
+.payment-options { margin-block: 22px 14px; border: 0; }
+.payment-option { display: block; margin-bottom: 9px; cursor: pointer; }
+.payment-option input { position: absolute; opacity: 0; }
+.payment-option span { display: flex; align-items: center; gap: 10px; padding: 12px; border: 1px solid #dce3dd; border-radius: 6px; color: var(--peru-ink); font-size: 1.35rem; }
+.payment-option input:checked + span { border-color: var(--peru-green); background: #eff5ef; box-shadow: 0 0 0 1px var(--peru-green); }
+.payment-option input:focus-visible + span { outline: 2px solid var(--peru-green); outline-offset: 2px; }
+.payment-option span > ion-icon { color: var(--peru-green); font-size: 2rem; }
+.payment-option small { margin-left: auto; color: var(--battleship-gray); font-size: 1.1rem; }
+.order-summary { padding: 13px; border-radius: 5px; background: #f5f7f4; color: #43574b; font-size: 1.25rem; line-height: 1.7; }
+.payment-disclaimer { margin-bottom: 16px; color: #755e30; font-size: 1.2rem; line-height: 1.55; }
+.text-button { display: block; margin: 14px auto 0; color: var(--peru-green); font-size: 1.3rem; text-decoration: underline; }
+.booking-success { text-align: center; }
+.success-icon { display: grid; place-items: center; width: 58px; height: 58px; margin: 0 auto 14px; border-radius: 50%; background: #eaf4e9; color: var(--peru-green); font-size: 3rem; }
+.success-eyebrow { color: var(--peru-terracotta); font-size: 1.3rem; font-weight: 700; text-transform: uppercase; }
+.booking-success h3 { margin: 5px 0 10px; color: var(--peru-ink); font-family: var(--ff-abril-fatface); font-size: 2.8rem; }
+.booking-success > p:not(.success-eyebrow) { color: var(--black-coral); font-size: 1.4rem; line-height: 1.65; }
+.booking-success .demo-notice { margin-bottom: 18px; background: #fffaf0; color: #745a28; text-align: left; }
+.booking-success .demo-notice > ion-icon { color: var(--peru-terracotta); }
+
+.peru-footer { padding-block: 28px; background-color: #112e25; }
+.peru-footer .footer-bottom { gap: 18px; }
+.peru-footer .brand .logo { color: #fff; }
+.peru-footer .copyright { color: #d0dad4; font-size: 1.2rem; }
+.footer-contact { display: flex; align-items: center; gap: 7px; color: #f2d394; font-size: 1.3rem; }
+.whatsapp-float {
+  position: fixed;
+  z-index: 8;
+  right: 20px;
+  bottom: 22px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 54px;
+  padding: 0 19px;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  background: #25d366;
+  box-shadow: 0 5px 20px #10271e40;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  transition: transform var(--transition-1), background var(--transition-1);
+}
+.whatsapp-float ion-icon { font-size: 2.8rem; }
+.whatsapp-float:is(:hover, :focus-visible) { transform: translateY(-3px); background: #1fb95a; }
+.whatsapp-float:focus-visible { outline: 3px solid #174c3c; outline-offset: 3px; }
+[hidden] { display: none !important; }
+
+@media (min-width: 575px) {
+  .brand .logo { font-size: 1.9rem; }
+  .form-row { grid-template-columns: 1fr 1fr; }
+  .booking-card { padding: 28px; }
+}
+
+@media (min-width: 768px) {
+  .peru-hero { padding-block: 70px 35px; }
+  .peru-hero .hero-layout { grid-template-columns: 1fr 0.9fr; gap: 44px; }
+  .hero-photo { min-height: 450px; }
+  .hero-photo > img { min-height: 450px; }
+  .destination-list { grid-template-columns: 1.15fr 0.85fr; grid-template-rows: repeat(2, 215px); }
+  .destination-card { min-height: 0; }
+  .destination-card img { min-height: 0; }
+  .destination-card-large { grid-row: span 2; }
+  .package-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .booking-layout { grid-template-columns: 0.8fr 1.2fr; gap: 45px; }
+  .booking-card { padding: 30px; }
+}
+
+@media (min-width: 992px) {
+  .brand .logo { font-size: 1.9rem; }
+  .navbar { background: transparent; }
+  .navbar-list { display: flex; }
+  .header-cta { margin: 0; }
+  .peru-hero { padding-block: 80px 35px; }
+  .peru-hero .hero-layout { grid-template-columns: 1fr 0.9fr; gap: 70px; }
+  .hero-photo { min-height: 540px; }
+  .hero-photo > img { min-height: 540px; }
+  .package-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .booking-layout { grid-template-columns: 0.9fr 1.1fr; gap: 80px; }
+  .peru-footer .footer-bottom { flex-direction: row; }
+}
+
+@media (max-width: 991px) {
+  .header.active { height: auto; min-height: 88px; }
+  .header.active .navbar { padding-bottom: 24px; }
+  .header-cta { display: inline-block; }
+}
+
+@media (max-width: 380px) {
+  .brand .logo { font-size: 1.45rem; }
+  .brand-mark { width: 32px; height: 32px; }
+  .hero-bottom { font-size: 0.85rem; }
+}
+
+@media (max-width: 420px) {
+  .whatsapp-float { right: 14px; bottom: 16px; min-height: 52px; padding-inline: 15px; }
+  .whatsapp-float span { font-size: 1.25rem; }
 }
